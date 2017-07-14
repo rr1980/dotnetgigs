@@ -9,7 +9,7 @@ export class AuthGuard implements CanActivate {
         return this.userIsLoggedIn(url);
     }
     private userIsLoggedIn(url: string): boolean {
-        console.log("HALLO");
+        console.log('HALLO');
         this.router.navigate(['/login']);
         return false;
     }
