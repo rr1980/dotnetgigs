@@ -1,19 +1,20 @@
 
-import { AppComponent as appComponent } from './components/app/app.component';
-import { AdminComponent as adminComponent} from './components/admin/admin.component';
-import { LoginComponent as loginComponent} from './components/login/login.component';
-import { HomeComponent as homeComponent} from './components/home/home.component';
-import { HeaderComponent as headerComponent} from './components/header/header.component';
-import { LoginButtonComponent as loginButtonComponent} from './components/header/login-button/login-button.component';
+import { AppComponent } from './components/app/app.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LoginButtonComponent } from './components/header/login-button/login-button.component';
 
-export const AppComponent = appComponent;
-export const AdminComponent = adminComponent
-export const LoginComponent = loginComponent
-export const HomeComponent = homeComponent
-export const HeaderComponent = headerComponent
-export const LoginButtonComponent = loginButtonComponent
+export { AppComponent };
+export { AdminComponent };
+export { LoginComponent };
+export { HomeComponent };
+export { HeaderComponent };
+export { LoginButtonComponent };
 
 export const routingComponents = [
+  AppComponent,
   AdminComponent,
   LoginComponent,
   HomeComponent,
@@ -21,4 +22,3 @@ export const routingComponents = [
   LoginButtonComponent
 ];
 
-// export { AppComponent } from "./components/app/app.component";
