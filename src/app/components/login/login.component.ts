@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthGuard, User } from '../../services/auth.guard';
 
 @Component({
     moduleId: module.id,
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
     styleUrls: ['login.component.scss']
 })
 export class LoginComponent {
-    constructor() {
-     }
+
+    public user = new User('', '');
+
+    constructor(private authGuard: AuthGuard) {
+    }
+
+    login() {
+        this.authGuard.Login(this.user);
+    }
 }

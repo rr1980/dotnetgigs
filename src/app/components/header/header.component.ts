@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthGuard } from '../../services/auth.guard';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public isAuth = false;
+
+  constructor(private authGuard: AuthGuard) { }
+
+  logout(event) {
+    console.log(this.isAuth);
+    this.authGuard.Logout();
+  }
+
+  public IsLoggedIn(): boolean {
+    return this.authGuard.IsLoggedIn();
+  }
 
   ngOnInit() {
   }
-
 }
