@@ -9,19 +9,11 @@ import { LoginButtonComponent } from './login-button/login-button.component';
 })
 export class HeaderComponent implements OnInit {
 
-  public isAuth = false;
-
   constructor(private authGuard: AuthGuard) { }
-
-  logout(event) {
-    console.log(this.isAuth);
-    this.authGuard.Logout();
-  }
 
   public IsLoggedIn(): boolean {
     return this.authGuard.IsLoggedIn();
   }
-
   ngOnInit() {
   }
 }

@@ -1,1 +1,11 @@
-<!--component html goes here -->
+<li *ngIf="IsLoggedIn()==true" [routerLinkActive]="['link-active']" class="nav-item">
+    <button (click)="logout($event)" class="btn align-middle btn-outline" type="button">Logout</button>
+    <!-- <a [routerLink]="['/login']" class="nav-link">
+                    <span class='sr-only'></span> Logout
+                </a> -->
+</li>
+<li *ngIf="IsLoggedIn()===false" [routerLinkActive]="['link-active']" class="nav-item">
+    <a [routerLink]="['/login']" class="nav-link">
+        <span class='sr-only'></span> Login
+    </a>
+</li>
