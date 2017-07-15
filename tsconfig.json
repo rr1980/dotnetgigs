@@ -6,7 +6,7 @@
         "declaration": false,
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
+        "experimentalDecorators": false,
         "skipDefaultLibCheck": true,
         "target": "es5",
         "typeRoots": [
@@ -15,6 +15,9 @@
         "lib": [
             "es2016",
             "dom"
+        ],
+        "rootDirs": [
+            "src/app"
         ]
     }
 }
