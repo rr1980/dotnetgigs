@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthGuard } from '../../services/auth.guard';
-import { LoginButtonComponent } from './login-button/login-button.component';
+
+import  { LoginButtonComponent } from '../../components.container';
 
 @Component({
   selector: 'app-header',
